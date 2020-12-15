@@ -1,20 +1,23 @@
 #include<iostream>
 using namespace std;
-int num,i=1,x=-1,y=0;
+int num;
+int i=1;
+int even=-1;
+int odd=0;
 int main(){
     while(i!=0){
     cout << "Enter an integer: ";
     cin >> num;
     if(num%2==0){
-    x++;
+    even++;
     }
     else
     {
-        y++;
+        odd++;
     }
     i=num;
     }
-    cout << "#Even numbers = "<<x;
-    cout << "\n#Odd numbers = "<<y;
+    cout << "#Even numbers = "<<even;
+    cout << "\n#Odd numbers = "<<odd;
     return 0;
 }
